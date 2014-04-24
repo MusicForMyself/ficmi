@@ -1,0 +1,19 @@
+{
+	"DB" : {
+		"host" 		: "localhost",
+		"database" 	: "ficmi2_db",
+		"user" 		: "root",
+		"password" 	: "root"
+	},
+
+	"Appearance" : {
+		"title" : "FICMi | Sistema Interno de Administración",
+		"home_url"	: ""
+	},
+
+	"Administration" : {
+		"contact_mail" : "john@hacemoscodigo.com"
+	}
+
+}
+
