@@ -59,3 +59,4 @@
 [25-Apr-2014 01:05:34 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
 [25-Apr-2014 03:23:07 Europe/Berlin] PHP Fatal error:  Call to undefined method err_manager::logMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 58
 [25-Apr-2014 03:24:48 Europe/Berlin] PHP Warning:  file_put_contents(/includes/err/gb.log) [<a href='0function.file-put-contents0'>function.file-put-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 48
+[25-Apr-2014 16:29:25 Europe/Berlin] PHP Warning:  mysqli_connect() [<a href='0function.mysqli-connect0'>function.mysqli-connect0</a>]: (42000/1049): Unknown database 'gumbo_db' in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 9

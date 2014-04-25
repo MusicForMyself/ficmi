@@ -4,7 +4,8 @@ requirejs.config({
         "jquery": "vendor/jquery/dist/jquery",
         "bootstrap": "vendor/bootstrap/dist/js/bootstrap.min",
         "index": "index",
-        "err_handler": "err_handling"
+        "err_handler": "err_handling",
+        "hashing": "hashing"
     },
     shim: {
     	"bootstrap": {

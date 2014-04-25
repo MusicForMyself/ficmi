@@ -12,6 +12,24 @@
  *
  */
 
+
+function loginUser($username, $password){
+    global $con;
+
+    if ($stmt = $con->prepare("SELECT id, username, password, salt 
+        FROM gb_users
+       WHERE email = ?
+        LIMIT 1")) {
+
+
+}
+
+
+
+
+
+
+
 function static secure_start() {
     $session_name = 'ficmi_session';   // Set a custom session name
     $secure = SECURE;
