@@ -1,5 +1,4 @@
 <h1>gumbo</h1>
-=====
 
 Php-js based framework for web app development.
 
@@ -8,6 +7,7 @@ Php-js based framework for web app development.
 <pre>
 <code>
 	global $err_handler;
+
 	//String $who, String $what_happened, Boolean $pop
 	$err_handler->logError($who, $what_happened, $pop);
 </code>

@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Pop error message
  * @param String $who  Who caused the error
