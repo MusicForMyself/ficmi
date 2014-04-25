@@ -1,9 +1,9 @@
 <?php
-	$config_file 	= file_get_contents("../../config.json");
+	$config_file 	= file_get_contents("config.json");
 	$config_json 	= json_decode($config_file, false);
-	
+
 	$dbcon_object 		= $config_json->DB;
-	$appearance_object 	= $config_json->Appearance;
+	$site_info 	= $config_json->site_info;
 
 	//Establish a connection to the database
 	$con = mysqli_connect($dbcon_object->host,$dbcon_object->user,$dbcon_object->password,$dbcon_object->database);

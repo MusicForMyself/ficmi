@@ -1,0 +1,61 @@
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Warning:  include_once(../er/err_manager.class.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening '../er/err_manager.class.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:09:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/gb_header.php on line 16
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Warning:  include_once(../err/err_manager.class.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening '../err/err_manager.class.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:11:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/gb_header.php on line 16
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Warning:  include_once(..err/err_manager.class.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening '..err/err_manager.class.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:11:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/gb_header.php on line 16
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Warning:  include_once(err/err_manager.class.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening 'err/err_manager.class.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[24-Apr-2014 22:11:32 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/gb_header.php on line 16
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[24-Apr-2014 22:12:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'popMessage' (T_STRING), expecting variable (T_VARIABLE) in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 4
+[24-Apr-2014 22:12:35 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'popMessage' (T_STRING), expecting variable (T_VARIABLE) in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 4
+[24-Apr-2014 22:12:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 00:53:08 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 00:54:21 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 00:54:49 Europe/Berlin] PHP Notice:  Use of undefined constant this - assumed 'this' in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 00:54:49 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 00:55:08 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 01:02:46 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 01:04:48 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 7
+[25-Apr-2014 01:05:28 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 7
+[25-Apr-2014 01:05:34 Europe/Berlin] PHP Fatal error:  Call to undefined function popMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 30
+[25-Apr-2014 03:23:07 Europe/Berlin] PHP Fatal error:  Call to undefined method err_manager::logMessage() in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 58
+[25-Apr-2014 03:24:48 Europe/Berlin] PHP Warning:  file_put_contents(/includes/err/gb.log) [<a href='0function.file-put-contents0'>function.file-put-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/err/err_manager.class.php on line 48

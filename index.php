@@ -1,15 +1,15 @@
-<?php
 
-	include_once('hc_header.php'); ?>
 
-	<section class="main_content">
+<?php include_once('gb_header.php'); ?>
 
-	</section>
+	<div class="container">
+		
+		<h1>Dashboard</h1>
 
-<?php
-	include_once('footer.php');
 
-?>
+	</div>
+
+<?php include_once('footer.php'); ?>
 
 
 

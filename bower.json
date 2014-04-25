@@ -1,0 +1,10 @@
+{
+	"name" 			: "gumbo",
+	"version"  		: "0.0.1",
+	"dependencies" 	: {
+		
+		"bootstrap"		: null,
+		"requirejs"		: null
+	} 
+
+}
