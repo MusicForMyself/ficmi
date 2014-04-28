@@ -9,21 +9,31 @@ $app->get('/', function () {
 	//header("Location: ".APPURL."view/login.php");
 });
 
-$app->get('/login/', function () use ($app){
+//SIGN IN
+$app->get('/login/', function (){
     /* Redirect browser */
     // $app->redirect('view/login.php'); 
     include("view/login.php");
     exit();
 });
 
+
 $app->get('/dashboard', function () {
     /* Redirect browser */
 	header("Location: ".APPURL."view/dashboard.php");
 });
 
+//SIGN UP
 $app->get('/signup', function () {
     /* Redirect browser */
-	header("Location: ".APPURL."view/register.php");
+	include("view/register.php");
+});
+
+$app->post('/signup/', function (){
+    /* Redirect browser */
+    // $app->redirect('view/login.php'); 
+    include("view/register.php");
+    exit();
 });
 
 $app->run();

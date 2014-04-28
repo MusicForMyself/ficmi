@@ -1,11 +1,13 @@
-define(["jquery", "hashing", "err_handler"], function($){
-	(function($){
-		   
-		    //Do some jQuery stuff right here
-		    console.log('Forms controller started');
+define(["jquery", "hashing", "err_handler"], function($, hasher){
 
-	})(jQuery);
+	return {
+			sendForm: function(){
+				console.log('imma sendin');
+				var SignupForm = document.getElementById('form-signup');
+				hasher.hashRegister(SignupForm, SignupForm.user, SignupForm.password, SignupForm.repeatpassword);
+			}
+	
+
+	}		
+
 });
-
-
-form-signup
