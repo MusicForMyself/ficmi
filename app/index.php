@@ -1,3 +1,3 @@
 <?php
 include_once('../includes/session/session_header.php');
-include_once( ROUTER);
+include_once(ROUTER);

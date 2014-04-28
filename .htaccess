@@ -1,3 +1,7 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
 # general directive for setting php error level
 php_value error_reporting 8191
 php_flag display_startup_errors on
@@ -11,13 +15,16 @@ php_flag track_errors on
 php_value docref_root 0
 php_value docref_ext 0
 php_value error_log PHP_errors.log
-RewriteEngine On
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-</IfModule>
 
 <Files PHP_errors.log>
  Order allow,deny
  Deny from all
  Satisfy All
 </Files>
+
+RewriteEngine On
+RewriteBase /ficmi_gumbo/app
+RewriteCond %{REQUEST_FILENAME} !js
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

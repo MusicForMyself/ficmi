@@ -7,7 +7,7 @@
 	$site_info 	= $config_json->site_info;
 
 	define("SITEURL", $site_info->local_url."/");
-	define("APPURL", SITEURL.$site_info->home);
+	define("APPURL", SITEURL.$site_info->home."/");
 	define("ROUTER", "../includes/routes/routes.php");
 
 	//Establish a connection to the database

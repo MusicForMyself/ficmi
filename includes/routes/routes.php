@@ -2,16 +2,24 @@
 
 $app = new \Slim\Slim();
 
+$app->config(
+    array(
+        'templates.path' => './app/view/'
+    )
+);
+
 $app->get('/', function () {
     /* Redirect browser */
     echo('These aren\'t the droids you are looking for');
 	//header("Location: ".APPURL."view/login.php");
 });
 
-$app->get('/login/', function () {
+$app->get('/login/', function () use ($app){
     /* Redirect browser */
-    echo('lol');
-	//header("Location: ".APPURL."view/login.php");
+    // $app->redirect('view/login.php'); 
+
+    include("view/login.php");
+    exit();
 });
 
 $app->get('/dashboard', function () {

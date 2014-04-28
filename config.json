@@ -8,8 +8,8 @@
 
 	"site_info" : {
 		"title" 			: "FICMi | Sistema Interno de Administración",
-		"home"				: "/app",
-		"local_url"			: "http://localhost/gumbo",
+		"home"				: "app",
+		"local_url"			: "http://localhost/ficmi_gumbo",
 		"development_url"	: "http://gumbo.hacemoscodigo.com",
 		"production_url"	: "http://"
 	},
