@@ -1,4 +1,4 @@
-<h1>gumbo</h1>
+<h1>gumbo installation for FICMI</h1>
 
 Php-js based framework for web app development.
 
