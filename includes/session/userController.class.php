@@ -24,6 +24,7 @@ class userController {
 		return false;
 	}
 
+	//Executes on POST route
 	function registerUser(){
 		global $con;
 		$username = filter_input(INPUT_POST, 'user', FILTER_SANITIZE_STRING);

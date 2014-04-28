@@ -36,4 +36,10 @@ $app->post('/signup/', function (){
     exit();
 });
 
+// $app->map('/signup/', function (){ 
+//     include("view/register.php");
+//     exit();
+// })->via('GET', 'POST');
+
+// RUN SLIM APPLICATION
 $app->run();
