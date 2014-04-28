@@ -23,8 +23,5 @@ php_value error_log PHP_errors.log
 </Files>
 
 RewriteEngine On
-RewriteBase /ficmi_gumbo/app
-RewriteCond %{REQUEST_FILENAME} !js
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [QSA,L]

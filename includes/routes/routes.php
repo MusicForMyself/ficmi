@@ -2,11 +2,6 @@
 
 $app = new \Slim\Slim();
 
-$app->config(
-    array(
-        'templates.path' => './app/view/'
-    )
-);
 
 $app->get('/', function () {
     /* Redirect browser */
@@ -17,7 +12,6 @@ $app->get('/', function () {
 $app->get('/login/', function () use ($app){
     /* Redirect browser */
     // $app->redirect('view/login.php'); 
-
     include("view/login.php");
     exit();
 });

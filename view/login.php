@@ -1,6 +1,6 @@
 <?php
 
- include_once('../gb_header.php'); ?>
+ include_once('gb_header.php'); ?>
 
 	<div class="container">
 
@@ -19,4 +19,4 @@
 
 	</div>
 
-<?php include_once ('../footer.php'); ?>
+<?php include_once ('footer.php'); ?>
