@@ -1,6 +1,5 @@
 <?php 
-	require 'vendor/autoload.php';
-	include_once('includes/db/conn_header.php'); 
+	include_once('includes/session/session_header.php');
 	global $site_info;
 ?>
 <!DOCTYPE html>
@@ -16,7 +15,7 @@
 	</head>
 
 	<body>
-	<?php include_once('includes/session/session_header.php'); ?>
+	
 
 		
 	

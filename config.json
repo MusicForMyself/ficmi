@@ -7,8 +7,11 @@
 	},
 
 	"site_info" : {
-		"title" : "FICMi | Sistema Interno de Administración",
-		"home_url"	: ""
+		"title" 			: "FICMi | Sistema Interno de Administración",
+		"home"				: "/app",
+		"local_url"			: "http://localhost/gumbo",
+		"development_url"	: "http://gumbo.hacemoscodigo.com",
+		"production_url"	: "http://"
 	},
 
 	"Administration" : {

@@ -64,3 +64,4 @@
 [28-Apr-2014 01:18:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'registerUser' (T_STRING), expecting variable (T_VARIABLE) in /Applications/MAMP/htdocs/gumbo/includes/session/userController.class.php on line 5
 [28-Apr-2014 01:21:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected '__construct' (T_STRING), expecting function (T_FUNCTION) in /Applications/MAMP/htdocs/gumbo/includes/session/userController.class.php on line 5
 [28-Apr-2014 01:23:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'checkForDuplicates' (T_STRING), expecting variable (T_VARIABLE) in /Applications/MAMP/htdocs/gumbo/includes/session/userController.class.php on line 27
+[28-Apr-2014 07:39:53 Europe/Berlin] PHP Fatal error:  Class 'userController' not found in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 5

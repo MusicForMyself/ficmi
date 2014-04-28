@@ -1,0 +1,159 @@
+[28-Apr-2014 07:44:58 Europe/Berlin] PHP Fatal error:  Class 'Slim\Slim' not found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 07:46:39 Europe/Berlin] PHP Fatal error:  Class 'includes\vendor\slim\Slim\Slim' not found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 07:47:59 Europe/Berlin] PHP Warning:  include_once(../includes/vendor/slim/Slim/Slim.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 07:47:59 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening '../includes/vendor/slim/Slim/Slim.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 07:47:59 Europe/Berlin] PHP Fatal error:  Class 'Slim\Slim' not found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 07:48:19 Europe/Berlin] PHP Fatal error:  Class 'Slim\Helper\Set' not found in /Applications/MAMP/htdocs/gumbo/includes/vendor/slim/slim/Slim/Slim.php on line 154
+[28-Apr-2014 08:06:52 Europe/Berlin] PHP Warning:  include_once(includes/db/conn_header.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/gb_header.php on line 2
+[28-Apr-2014 08:06:52 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening 'includes/db/conn_header.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/gb_header.php on line 2
+[28-Apr-2014 08:06:52 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/app/gb_header.php on line 11
+[28-Apr-2014 08:06:52 Europe/Berlin] PHP Warning:  include_once(includes/session/session_header.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/gb_header.php on line 18
+[28-Apr-2014 08:06:52 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening 'includes/session/session_header.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/gb_header.php on line 18
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Warning:  file_get_contents(config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:08:14 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/gb_header.php on line 11
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 2
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 5
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:09:25 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/gb_header.php on line 11
+[28-Apr-2014 08:10:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:20:30 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 08:20:30 Europe/Berlin] PHP Warning:  require(ROUTER) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 08:20:30 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required 'ROUTER' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 08:26:31 Europe/Berlin] PHP Warning:  require(../../includes/session/session_header.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 08:26:31 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '../../includes/session/session_header.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 2
+[28-Apr-2014 08:27:49 Europe/Berlin] PHP Warning:  include_once(includes/db/conn_header.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[28-Apr-2014 08:27:49 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening 'includes/db/conn_header.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 2
+[28-Apr-2014 08:27:49 Europe/Berlin] PHP Warning:  include_once(includes/err/err_manager.class.php) [<a href='0function.include-once0'>function.include-once0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 3
+[28-Apr-2014 08:27:49 Europe/Berlin] PHP Warning:  include_once() [<a href='0function.include0'>function.include0</a>]: Failed opening 'includes/err/err_manager.class.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 3
+[28-Apr-2014 08:27:49 Europe/Berlin] PHP Fatal error:  Class 'err_manager' not found in /Applications/MAMP/htdocs/gumbo/includes/session/session_header.php on line 6
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Warning:  file_get_contents(config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 3
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Use of undefined constant SITEURL - assumed 'SITEURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Use of undefined constant APPURL - assumed 'APPURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 11
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:28:04 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Warning:  file_get_contents(config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 3
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Use of undefined constant SITEURL - assumed 'SITEURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Use of undefined constant APPURL - assumed 'APPURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 11
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:29:02 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Warning:  file_get_contents(config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 3
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Use of undefined constant SITEURL - assumed 'SITEURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Use of undefined constant APPURL - assumed 'APPURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 11
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:29:03 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Warning:  file_get_contents(../../config.json) [<a href='0function.file-get-contents0'>function.file-get-contents0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 3
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Use of undefined constant SITEURL - assumed 'SITEURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Use of undefined constant APPURL - assumed 'APPURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 11
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:32:47 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Use of undefined constant SITEURL - assumed 'SITEURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Use of undefined constant APPURL - assumed 'APPURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 11
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:33:02 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Use of undefined constant SITEURL - assumed 'SITEURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Use of undefined constant APPURL - assumed 'APPURL' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Use of undefined constant ROUTER - assumed 'ROUTER' in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 11
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:33:31 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 6
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 7
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 9
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 10
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Applications/MAMP/htdocs/gumbo/includes/db/conn_header.php on line 14
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Warning:  require(/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: No such file or directory in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:34:12 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required '/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:35:39 Europe/Berlin] PHP Warning:  require() [<a href='0function.require0'>function.require0</a>]: http:// wrapper is disabled in the server configuration by allow_url_include=0 in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:35:39 Europe/Berlin] PHP Warning:  require(http://localhost/gumbo/app//includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: no suitable wrapper could be found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:35:39 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required 'http://localhost/gumbo/app//includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:36:46 Europe/Berlin] PHP Warning:  require() [<a href='0function.require0'>function.require0</a>]: http:// wrapper is disabled in the server configuration by allow_url_include=0 in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:36:46 Europe/Berlin] PHP Warning:  require(http://localhost/gumbo/app//includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: no suitable wrapper could be found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:36:46 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required 'http://localhost/gumbo/app//includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:38:14 Europe/Berlin] PHP Warning:  require() [<a href='0function.require0'>function.require0</a>]: http:// wrapper is disabled in the server configuration by allow_url_include=0 in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:38:14 Europe/Berlin] PHP Warning:  require(http://localhost/gumbo/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: no suitable wrapper could be found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:38:14 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required 'http://localhost/gumbo/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:40:07 Europe/Berlin] PHP Warning:  require() [<a href='0function.require0'>function.require0</a>]: http:// wrapper is disabled in the server configuration by allow_url_include=0 in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:40:07 Europe/Berlin] PHP Warning:  require(http://localhost/gumbo/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: no suitable wrapper could be found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:40:07 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required 'http://localhost/gumbo/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:40:09 Europe/Berlin] PHP Warning:  require() [<a href='0function.require0'>function.require0</a>]: http:// wrapper is disabled in the server configuration by allow_url_include=0 in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:40:09 Europe/Berlin] PHP Warning:  require(http://localhost/gumbo/includes/routes/routes.php) [<a href='0function.require0'>function.require0</a>]: failed to open stream: no suitable wrapper could be found in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3
+[28-Apr-2014 08:40:09 Europe/Berlin] PHP Fatal error:  require() [<a href='0function.require0'>function.require0</a>]: Failed opening required 'http://localhost/gumbo/includes/routes/routes.php' (include_path='.:/Applications/MAMP/bin/php/php5.5.3/lib/php') in /Applications/MAMP/htdocs/gumbo/app/index.php on line 3

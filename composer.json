@@ -1,6 +1,6 @@
 {
 	"config": {
-        "vendor-dir": "includes"
+        "vendor-dir": "includes/vendor"
     },
     "require": {
         "slim/slim": "2.*"
