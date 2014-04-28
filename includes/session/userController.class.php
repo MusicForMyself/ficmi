@@ -1,8 +1,11 @@
 <?php
-
+/**
+ * User controller
+ * @package session
+ */
 class userController {
 
-	public registerUser(){
+	public function registerUser(){
 
 		$username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 		if(checkForDuplicates($username)) {
@@ -21,7 +24,7 @@ class userController {
 
 	}
 
-	public checkForDuplicates($username){
+	public function checkForDuplicates($username){
 
 		$prep_stmt = "SELECT id FROM gb_users WHERE username = ? LIMIT 1";
 		$stmt = $mysqli->prepare($prep_stmt);

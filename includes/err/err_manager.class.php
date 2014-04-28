@@ -1,9 +1,6 @@
 <?php
 /**
- * Pop error message
- * @param String $who  Who caused the error
- * @param String $what_happened  What is the error about 
- * @return null
+ * Error manager class for logging and popping error messages
  * @package err
  */
 class err_manager{

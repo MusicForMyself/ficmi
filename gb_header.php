@@ -1,5 +1,5 @@
 <?php 
-
+	require 'vendor/autoload.php';
 	include_once('includes/db/conn_header.php'); 
 	global $site_info;
 ?>

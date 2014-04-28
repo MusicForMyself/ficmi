@@ -1,0 +1,8 @@
+{
+	"config": {
+        "vendor-dir": "includes"
+    },
+    "require": {
+        "slim/slim": "2.*"
+    }
+}
