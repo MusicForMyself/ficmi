@@ -19,19 +19,26 @@ $app->get('/login/', function (){
 
 
 $app->get('/dashboard', function () {
-    /* Redirect browser */
-	header("Location: ".APPURL."view/dashboard.php");
+
+	include("view/dashboard.php");
+    exit();
+});
+
+$app->get('/contactos', function () {
+
+    include("view/contactos.php");
+    exit();
 });
 
 //SIGN UP
 $app->get('/signup', function () {
-    /* Redirect browser */
+
 	include("view/register.php");
+    exit();
 });
 
 $app->post('/signup/', function (){
-    /* Redirect browser */
-    // $app->redirect('view/login.php'); 
+
     include("view/register.php");
     exit();
 });

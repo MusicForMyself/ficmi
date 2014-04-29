@@ -7,6 +7,7 @@ requirejs.config({
         "index": "index",
         "hashing": "hashing",
         "forms": "forms",
+        "tables": "tables",
         "err_handler": "err_handling",
     },
     shim: {

@@ -6,7 +6,7 @@
 class userController {
 
 	function checkForDuplicates($username){
-		global $con;
+		global $con, $error_handler;
 		$prep_stmt = "SELECT id FROM gb_users WHERE username = ? LIMIT 1";
 		$stmt = $con->prepare($prep_stmt);
 	 
@@ -24,14 +24,18 @@ class userController {
 		return false;
 	}
 
-	//Executes on POST route
+	/**
+	 * Register a new user to the system using a form
+	 * Ideally to be used with the prepared route named 'signup' by default
+	 * @return [type] [description]
+	 */
 	function registerUser(){
-		global $con;
+		global $con, $error_handler;
 		$username = filter_input(INPUT_POST, 'user', FILTER_SANITIZE_STRING);
 		
 		if($this::checkForDuplicates($username)) {
-			$err_handler->logError('User creation', 'There is a user with the same name already!', true);
-			return;
+			$error_handler->logError('User creation', 'There is a user with the same name already!', true);
+			return false;
 		}
 
 		$permissions = filter_input(INPUT_POST, 'permissions', FILTER_SANITIZE_STRING);
@@ -41,7 +45,7 @@ class userController {
 			// The hashed pwd should be 128 characters long.
 			// If it's not, something really odd has happened
 			$err_handler->logError('User creation', 'Password is invalid or a threat', true);
-			return;
+			return false;
 		}
 
 		// Create a random salt
@@ -55,8 +59,10 @@ class userController {
             $insert_stmt->bind_param('ssss', $username, $password, $random_salt, $permissions);
             // Execute the prepared query.
             if (! $insert_stmt->execute()) {
-                header('Location: ../register.php?err=Registration failure: INSERT');
+                $error_handler->logError('Insert error', 'There was a problem executing the query', true);
             }
+            $error_handler->logError('Success', 'Successfully created new user', true);
+            return true;
         }
 
 	}

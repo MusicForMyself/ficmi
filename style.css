@@ -7,9 +7,15 @@
  */
 
 .login_img{display: block; margin: 1rem auto;}
+.sidebar_logo{display: block; margin: 1rem auto; width: 100%; height: auto;}
 .form-signin,
 .form-signup{width: 420px; margin: auto;}
 .form-signin input,
 .form-signup input{margin: 1rem 0;}
 
 #warning-alert{display: none;}
+
+.sidebar{position: relative;}
+.main{position: absolute;}
+
+.table-responsive *{box-sizing: border-box;}

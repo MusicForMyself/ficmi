@@ -103,3 +103,7 @@
 [29-Apr-2014 01:14:25 Europe/Berlin] PHP Fatal error:  Call to undefined function checkForDuplicates() in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 12
 [29-Apr-2014 01:15:35 Europe/Berlin] PHP Fatal error:  Call to undefined function checkForDuplicates() in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 31
 [29-Apr-2014 01:19:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'global' (T_GLOBAL), expecting function (T_FUNCTION) in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 7
+[29-Apr-2014 06:23:34 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37
+[29-Apr-2014 06:27:24 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37
+[29-Apr-2014 06:27:30 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37
+[29-Apr-2014 06:27:33 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37

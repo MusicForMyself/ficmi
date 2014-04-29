@@ -19,12 +19,7 @@
 	</div>
 
 	<?php
-		file_put_contents(
-							'/Users/maquilador8/Desktop/php.log', 
-							var_export($_SERVER['REQUEST_METHOD'], true), 
-							FILE_APPEND);
-
-
+		
 		global $user_controller;
 
 		if($_SERVER['REQUEST_METHOD']=='POST')

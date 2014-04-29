@@ -9,6 +9,14 @@ define(["jquery", "forms", "bootstrap", "err_handler"], function($, myforms){
 		    	myforms.sendForm();
 		    });
 			
+			var prevBorder;
+			$('td').hover(function(){
+		    	prevBorder = $(this).css('border');
+		    	$(this).css('border', '1px solid #C4C4C4');
+		    },
+		    function(){
+		    	$(this).css('border', prevBorder);
+		    });
 
 	})(jQuery);
 });

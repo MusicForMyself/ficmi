@@ -10,11 +10,17 @@
 
 		}
 
-		public function insert(){
+		//Probably js
+		public function countColumns(){
+			
+			return $count;
+		}
+
+		public function addColumn($tableName, $newColumn, $firstValue = NULL){
 			
 		}
 
-		public function insert(){
+		public function getTable($tableName, $filterCol = NULL, $filterValue = NULL){
 			
 		}
 
