@@ -1,7 +1,8 @@
 {
 	"DB" : {
+		"driver" 	: "mysql",
 		"host" 		: "localhost",
-		"database" 	: "ficmi_db",
+		"database" 	: "gumbo_db",
 		"user" 		: "root",
 		"password" 	: "root"
 	},
@@ -11,11 +12,17 @@
 		"home"				: "app",
 		"local_url"			: "http://localhost/ficmi_gumbo",
 		"development_url"	: "http://gumbo.hacemoscodigo.com",
-		"production_url"	: "http://"
+		"production_url"	: "http://",
+		"mode"				: "development"
 	},
 
 	"Administration" : {
 		"contact_mail" : "john@hacemoscodigo.com"
+	},
+
+	"security"	:	{
+		"secure_connection_local"	: "FALSE",
+		"secure_connection"	: "TRUE"
 	}
 
 }

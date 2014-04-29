@@ -107,3 +107,130 @@
 [29-Apr-2014 06:27:24 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37
 [29-Apr-2014 06:27:30 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37
 [29-Apr-2014 06:27:33 Europe/Berlin] PHP Fatal error:  Call to a member function logError() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/session/userController.class.php on line 37
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:05:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 193
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:47:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:11 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:13 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:49:16 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:21 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:40 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 6
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 8
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 17
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:50:43 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 21
+[29-Apr-2014 19:51:09 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$site_info in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 7
+[29-Apr-2014 19:51:09 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 11
+[29-Apr-2014 19:51:09 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 12
+[29-Apr-2014 19:51:09 Europe/Berlin] PHP Notice:  Trying to get property of non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/conn_header.php on line 14
+[29-Apr-2014 20:08:23 Europe/Berlin] PHP Fatal error:  Call to undefined function sec_session_start() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 5
+[29-Apr-2014 20:09:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'static' (T_STATIC), expecting '(' in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/core_session.php on line 33
+[29-Apr-2014 20:13:25 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'global' (T_GLOBAL), expecting function (T_FUNCTION) in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 8
+[29-Apr-2014 20:13:57 Europe/Berlin] PHP Fatal error:  Call to undefined function sec_session_start() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 5
+[29-Apr-2014 20:15:58 Europe/Berlin] PHP Fatal error:  Call to undefined function login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:16:51 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:18:56 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:18:58 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:18:59 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:18:59 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:18:59 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:18:59 Europe/Berlin] PHP Fatal error:  Call to undefined method userController::login_check() in /Users/maquilador8/var/www/ficmi_gumbo/view/dashboard.php on line 6
+[29-Apr-2014 20:23:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected '__construct' (T_STRING), expecting function (T_FUNCTION) in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 12
+[29-Apr-2014 20:23:13 Europe/Berlin] PHP Warning:  Missing argument 1 for userController::__construct(), called in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/session_header.php on line 9 and defined in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 12
+[29-Apr-2014 20:23:13 Europe/Berlin] PHP Warning:  Missing argument 2 for userController::__construct(), called in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/session_header.php on line 9 and defined in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 12
+[29-Apr-2014 20:23:13 Europe/Berlin] PHP Notice:  Undefined variable: mysqli in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 13
+[29-Apr-2014 20:23:13 Europe/Berlin] PHP Notice:  Undefined variable: error_handler in /Users/maquilador8/var/www/ficmi_gumbo/includes/session/userController.class.php on line 14
+[30-Apr-2014 00:04:46 Europe/Berlin] PHP Fatal error:  Call to undefined function populateTable() in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 22
+[30-Apr-2014 00:32:03 Europe/Berlin] PHP Fatal error:  Call to undefined method mysqli_stmt::fetch_assoc() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 18
+[30-Apr-2014 00:33:10 Europe/Berlin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 18
+[30-Apr-2014 00:40:46 Europe/Berlin] PHP Fatal error:  Call to undefined method mysqli_stmt::fetch_row() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 18
+[30-Apr-2014 00:42:29 Europe/Berlin] PHP Fatal error:  Call to undefined method mysqli_stmt::fetch_assoc() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 18
+[30-Apr-2014 00:51:18 Europe/Berlin] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 18

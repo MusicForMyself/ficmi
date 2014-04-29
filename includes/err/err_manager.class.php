@@ -22,8 +22,7 @@ class err_manager{
 						<h4 class="modal-title"><i class="fa fa-exclamation-triangle"></i> $who</h4>
 					</div>
 					<div class="modal-body">
-						<p>Oops, there was an error <br>
-						$what_happened</p>
+						<p>$what_happened</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

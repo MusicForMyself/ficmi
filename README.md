@@ -51,7 +51,7 @@ Php-js based framework for web app development.
 <pre>
 	<code>
 		<p>This is my url: <?php site_url('dashboard'); ?></p>
-		//Outputs This is my url: http://example.com/dashboard
+		<!-- Outputs This is my url: http://example.com/dashboard -->
 		
 		<?php
 		$myurl = site_url('', false);

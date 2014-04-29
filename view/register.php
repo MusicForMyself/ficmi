@@ -25,6 +25,7 @@
 
 	<?php
 		
+		// TODO: sacar esta lógica del view cuando se integre handlebars
 		global $user_controller;
 
 		if($_SERVER['REQUEST_METHOD']=='POST')

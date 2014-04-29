@@ -15,7 +15,7 @@ define(["sha512"], function(){
 					 
 						// Make sure the plaintext password doesn't get sent. 
 						password.value = "";
-					 
+					 	console.log('lol catz');
 						// Finally submit the form. 
 						form.submit();
 					},

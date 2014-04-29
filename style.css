@@ -19,3 +19,4 @@
 .main{position: absolute;}
 
 .table-responsive *{box-sizing: border-box;}
+.table-striped>tbody td{border: 1px solid #CCCCCC;}

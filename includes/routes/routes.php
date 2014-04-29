@@ -10,12 +10,17 @@ $app->get('/', function () {
 });
 
 //SIGN IN
-$app->get('/login/', function (){
-    /* Redirect browser */
-    // $app->redirect('view/login.php'); 
+// $app->get('/login/', function (){
+//     /* Redirect browser */
+//     // $app->redirect('view/login.php'); 
+//     include("view/login.php");
+//     exit();
+// });
+$app->map('/login/', function (){ 
+    
     include("view/login.php");
     exit();
-});
+})->via('GET', 'POST');
 
 
 $app->get('/dashboard', function () {
