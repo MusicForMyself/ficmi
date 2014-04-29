@@ -6,7 +6,7 @@
 		"password" 	: "root"
 	},
 
-	"site_info" : {
+	"app_info" : {
 		"title" 			: "FICMi | Sistema Interno de Administración",
 		"home"				: "app",
 		"local_url"			: "http://localhost/ficmi_gumbo",

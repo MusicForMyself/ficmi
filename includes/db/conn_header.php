@@ -4,10 +4,10 @@
 	$config_json 	= json_decode($config_file, false);
 
 	$dbcon_object 		= $config_json->DB;
-	$site_info 	= $config_json->site_info;
+	$app_info 	= $config_json->site_info;
 
-	define("SITEURL", $site_info->local_url."/");
-	define("APPURL", SITEURL.$site_info->home."/");
+	define("SITEURL", $app_info->local_url."/");
+	define("APPURL", SITEURL.$app_info->home."/");
 	define("ROUTER", "includes/routes/routes.php");
 
 	//Establish a connection to the database
