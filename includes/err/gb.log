@@ -154,3 +154,55 @@ Caused by: Table population
 Error: Error executing query, response: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? LIMIT 15' at line 1 
 Caused by: Table population
 
+1398830394
+Error: Error executing query, response: Table 'gumbo_db.gb_contacts' doesn't exist 
+Caused by: Table population
+
+1398836504
+Error: There was a problem executing the query 
+Caused by: Insert error
+
+1398836504
+Error: Successfully created new user 
+Caused by: Success
+
+1398836520
+Error: There was a problem executing the query 
+Caused by: Insert error
+
+1398836520
+Error: Successfully created new user 
+Caused by: Success
+
+1398836641
+Error: There was a problem executing the query 
+Caused by: Insert error
+
+1398836641
+Error: Successfully created new user 
+Caused by: Success
+
+1398836662
+Error: There was a problem executing the query 
+Caused by: Insert error
+
+1398836662
+Error: Successfully created new user 
+Caused by: Success
+
+1398836987
+Error: There was a problem executing the query 
+Caused by: Insert error
+
+1398836987
+Error: Successfully created new user 
+Caused by: Success
+
+1398837092
+Error: Successfully created new user 
+Caused by: Success
+
+1398838344
+Error: Error executing query 
+Caused by: Table population
+

@@ -6,11 +6,11 @@
 class userController {
 
 	// global $con, $error_handler;
-	private $mysqli;
+	private $pdo_con;
 	private $error_handler;
 
-	function __construct($mysqli, $error_handler){
-		$this->mysqli = $mysqli;
+	function __construct($pdo_con, $error_handler){
+		$this->pdo_con = $pdo_con;
 		$this->error_handler = $error_handler;
 	}
 
@@ -22,15 +22,15 @@ class userController {
 	 */
 	function checkForDuplicates($username){
 		global $con;
-		$prep_stmt = "SELECT id FROM gb_users WHERE username = ? LIMIT 1";
-		$stmt = $con->prepare($prep_stmt);
-	 
-		if ($stmt) {
-			$stmt->bind_param('s', $username);
-			$stmt->execute();
-			$stmt->store_result();
-	 
-			if ($stmt->num_rows == 1) {
+
+		$stmt = $con->prepare("SELECT id FROM gb_users WHERE username = ? LIMIT 1");
+	 	$stmt->bindParam(1, $username);
+
+		if ($stmt->execute()) {
+
+			// $stmt->store_result();
+
+			if ($stmt->fetch(PDO::FETCH_NUM) == 1) {
 				return true;
 			}
 		} else {
@@ -70,15 +70,17 @@ class userController {
 		$password = hash('sha512', $password . $random_salt);
  
 		// Insert the new user into the database 
-		if ($insert_stmt = $con->prepare("INSERT INTO gb_users (username, password, salt, permissions) VALUES (?, ?, ?, ?)")) {
-			$insert_stmt->bind_param('ssss', $username, $password, $random_salt, $permissions);
-			// Execute the prepared query.
-			if (! $insert_stmt->execute()) {
-				$error_handler->logError('Insert error', 'There was a problem executing the query', true);
-			}
-			$error_handler->logError('Success', 'Successfully created new user', true);
-			return true;
+		$insert_stmt = $con->prepare("INSERT INTO gb_users (username, password, salt, permissions) VALUES (?, ?, ?, ?)");
+		$insert_stmt->bindParam(1, $username, PDO::PARAM_STR, 12);
+		$insert_stmt->bindParam(2, $password, PDO::PARAM_STR, 128);
+		$insert_stmt->bindParam(3, $random_salt, PDO::PARAM_STR, 128);
+		$insert_stmt->bindParam(4, $permissions, PDO::PARAM_STR, 12);
+
+		if (! $insert_stmt->execute()) {
+			$error_handler->logError('Insert error', 'There was a problem executing the query', true);
 		}
+		$error_handler->logError('Success', 'Successfully created new user', true);
+		return true;
 
 	}
 
@@ -90,24 +92,26 @@ class userController {
 	function loginUser($username, $password){
 		global $con, $error_handler;
 
-		if ($stmt = $con->prepare("SELECT id, username, password, salt 
+		$stmt = $con->prepare("SELECT id, username, password, salt 
 									FROM gb_users
 										WHERE username = ?
-										LIMIT 1"))
-		{
+										LIMIT 1");
 
-			$stmt->bind_param('s', $username);
-			$stmt->execute();
-			$stmt->store_result();
+		$stmt->bindParam(1, $username, PDO::PARAM_STR, 12);
+
+		if($stmt->execute()){
 	 
 			// get variables from result.
-			$stmt->bind_result($user_id, $username, $db_password, $salt);
-			$stmt->fetch();
+			$stmt->bindColumn( 1, $user_id);
+			$stmt->bindColumn( 2, $username);
+			$stmt->bindColumn( 3, $db_password);
+			$stmt->bindColumn( 4, $salt);
+			
 	 
 			// hash the password with the unique salt.
 			$password = hash('sha512', $password . $salt);
 
-			if ($stmt->num_rows == 1) {
+			if ($stmt->fetch(PDO::FETCH_NUM) == 1) {
 				
 	 			// TODO: Activate Brute force check
 				// if (checkbrute($user_id, $mysqli) == true) {

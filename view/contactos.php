@@ -13,40 +13,40 @@
 
 					<div class="table-responsive">
 						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>Nombre</th>
-									<th>Apellidos</th>
-									<th>Email</th>
-									<th>Teléfono</th>
-								</tr>
-							</thead>
+							
 							<?php 
 							$table = new tableController();
 							$results = $table->populateTable("gb_contacts"); 
-								file_put_contents(
-													'/Users/maquilador8/Desktop/php.log', 
-													var_export($results, true), 
-													FILE_APPEND);
-							?>
-							<!-- <tbody>
+
+							//Exclude array
+							$exclude = array("created", "other");?>
+							
+							<thead>
 								<tr>
-									<td>1,001</td>
-									<td>Lorem</td>
-									<td>ipsum</td>
-									<td>dolor</td>
-									<td>sit</td>
+									<?php
+									foreach ($results[0] as $index =>  $param) {
+										if(!array_search($index, $exclude))
+											echo "<th>".$index."</th>";
+									}
+									?>
+
 								</tr>
-								<tr>
-									<td>1,002</td>
-									<td>amet</td>
-									<td>consectetur</td>
-									<td>adipiscing</td>
-									<td>elit</td>
-								</tr>
-								
-							</tbody> -->
+							</thead>
+							<tbody id="tableBody">
+
+								<?php
+								//Exclude array
+								foreach ($results as $row) {
+									echo '<tr>';
+									foreach ($row as $cell_value) {
+										echo "<th>".$cell_value."</th>";
+									}
+									echo '</tr>';
+										
+								}
+								?>
+
+							</tbody>
 						</table>
 					</div><!-- table-resposive -->
 

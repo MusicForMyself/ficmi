@@ -16,8 +16,14 @@ define(["jquery", "forms", "bootstrap", "err_handler"], function($, myforms){
 			});
 
 			//These too, put in tables.js
+			var newRow;
 			$('#add_row').on('click', function(){
-				//$('')
+				var $tbody = $('#tableBody');
+				newRow = $('#tableBody tr').last().clone();
+				console.log(newRow);
+				newRow.addClass('inserted_row');
+				newRow.find('th').text('');
+				$tbody.append(newRow);
 			});
 			
 			var prevBorder;

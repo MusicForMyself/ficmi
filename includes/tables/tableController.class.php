@@ -7,23 +7,15 @@ class tableController{
 	function populateTable($tableName, $offset = 0){
 		global $con, $error_handler;
 
-		//Validate and sanitize tableName
-		//
-		$prep_stmt = "SELECT * FROM $tableName LIMIT 15 OFFSET ?";
-		$stmt = $con->prepare($prep_stmt);
-	 
-		if ($stmt) {
-			$stmt->bind_param('i', $offset);
-			$stmt->execute();
-			if($res = $stmt->get_result()){
+		//TODO: Validate and sanitize tableName
 
-				while( $row = $res->fetch_assoc()) {
-					$rows[] = $row;
-				}
-			}
+		$stmt = $con->prepare("SELECT * FROM $tableName LIMIT 15 OFFSET ?");
+	 	$stmt->bindParam( 1, $offset, PDO::PARAM_INT, 12);
+
+		if ($stmt->execute()) {
+			return $stmt->fetchAll(PDO::FETCH_OBJ);
+		}
 			
-
-			$stmt->close(); 
 			// $stmt->bind_result($id, $first_name, $last_name, $email, $phone, $type);
 
 			
@@ -32,14 +24,11 @@ class tableController{
 	 		// $returnObject = new stdClass();
 	 		// $returnObject->meta = $meta;
 	 		// $returnObject->results = $row;
-	 		file_put_contents(
-	 							'/Users/maquilador8/Desktop/php.log', 
-	 							var_export($rows, true), 
-	 							FILE_APPEND);
-	 		return $returnObject;
+
+	 		
 	 		//return object containig results
-		} else {
-			$error_handler->logError("Table population", "Error executing query, response: $con->error", true);
+		else {
+			$error_handler->logError("Table population", "Error executing query", true);
 		}
 		return false;
 

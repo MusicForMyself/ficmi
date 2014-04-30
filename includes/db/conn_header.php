@@ -16,14 +16,14 @@
 	}else{
 		define("SECURE", $security->secure_connection);
 	}
-	
-	//Establish a connection to the database
-	$con = mysqli_connect($dbcon_object->host, $dbcon_object->user, $dbcon_object->password, $dbcon_object->database);
-
-	// Check connection
-	if (mysqli_connect_errno()) {
-	  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
 
 	//PDO Connection
-	$pdo_con = new PDO("{$dbcon_object->driver}:host={$dbcon_object->host};dbname={$dbcon_object->database};charset=utf8", $dbcon_object->user, $dbcon_object->password);
+	try{
+
+		$con = new PDO("{$dbcon_object->driver}:host={$dbcon_object->host};dbname={$dbcon_object->database};charset=utf8", $dbcon_object->user, $dbcon_object->password); 
+	}catch(PDOException $e){
+   		 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+	
+	

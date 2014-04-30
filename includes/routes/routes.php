@@ -29,11 +29,11 @@ $app->get('/dashboard', function () {
     exit();
 });
 
-$app->get('/contactos', function () {
+$app->map('/contactos', function () {
 
     include("view/contactos.php");
     exit();
-});
+})->via('GET', 'POST');
 
 //SIGN UP
 $app->get('/signup', function () {
