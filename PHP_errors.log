@@ -253,3 +253,38 @@ Stack trace:
 #7 /Applications/MAMP/htdocs/ficmi_gumbo/includes/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
 #8 / in /Applications/MAMP/htdocs/ficmi_gumbo/view/contactos.php on line 23
 [30-Apr-2014 08:53:37 Europe/Berlin] PHP Fatal error:  Object of class stdClass could not be converted to string in /Applications/MAMP/htdocs/ficmi_gumbo/view/contactos.php on line 23
+[30-Apr-2014 17:04:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected '">"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 44
+[30-Apr-2014 18:33:09 Europe/Berlin] PHP Parse error:  syntax error, unexpected '__construct' (T_STRING), expecting variable (T_VARIABLE) in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 8
+[30-Apr-2014 18:38:18 Europe/Berlin] PHP Fatal error:  Call to private query_master::__construct() from invalid context in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 71
+[30-Apr-2014 18:48:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 22
+[30-Apr-2014 18:48:55 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 22
+[30-Apr-2014 18:59:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 38
+[30-Apr-2014 19:00:22 Europe/Berlin] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdo_con' in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php:38
+Stack trace:
+#0 /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php(38): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/maquilad...', 38, Array)
+#1 /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php(72): query_master->insert('gb_contacts', Array, Array)
+#2 /Users/maquilador8/var/www/ficmi_gumbo/includes/routes/routes.php(34): include('/Users/maquilad...')
+#3 [internal function]: {closure}()
+#4 /Users/maquilador8/var/www/ficmi_gumbo/includes/vendor/slim/slim/Slim/Route.php(462): call_user_func_array(Object(Closure), Array)
+#5 /Users/maquilador8/var/www/ficmi_gumbo/includes/vendor/slim/slim/Slim/Slim.php(1326): Slim\Route->dispatch()
+#6 /Users/maquilador8/var/www/ficmi_gumbo/includes/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/maquilador8/var/www/ficmi_gumbo/includes/vendor/sli in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 38
+[30-Apr-2014 19:00:22 Europe/Berlin] PHP Fatal error:  Cannot access empty property in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 38
+[30-Apr-2014 19:00:49 Europe/Berlin] PHP Fatal error:  Call to a member function prepare() on a non-object in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 38
+[30-Apr-2014 20:50:51 Europe/Berlin] PHP Fatal error:  Call to undefined function addColumn() in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 94
+[30-Apr-2014 20:51:42 Europe/Berlin] PHP Fatal error:  Call to undefined function addColumn() in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 98
+[30-Apr-2014 20:51:46 Europe/Berlin] PHP Fatal error:  Call to undefined function addColumn() in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 98
+[30-Apr-2014 21:11:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 111
+[30-Apr-2014 21:12:24 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 111
+[30-Apr-2014 21:12:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 111
+[30-Apr-2014 21:14:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected ',' in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 112
+[30-Apr-2014 21:17:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 114
+[30-Apr-2014 21:17:35 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 114
+[30-Apr-2014 21:17:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 114
+[30-Apr-2014 21:47:20 Europe/Berlin] PHP Fatal error:  Call to undefined method query_master::removeColumn() in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 110
+[30-Apr-2014 23:22:15 Europe/Berlin] PHP Parse error:  syntax error, unexpected '"' in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 107
+[01-May-2014 00:05:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected '', '' (T_CONSTANT_ENCAPSED_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/includes/db/the_query_master.class.php on line 70
+[01-May-2014 00:49:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH), expecting ',' or ';' in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 68
+[01-May-2014 02:40:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET) in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 129
+[01-May-2014 02:40:29 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$array_values' (T_VARIABLE), expecting ';' in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 129
+[01-May-2014 02:41:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING), expecting ';' in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 131
