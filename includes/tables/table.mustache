@@ -1,0 +1,46 @@
+<table class="table table-striped">
+	
+	<thead>
+		<tr>
+			
+			<th class='check'><input type='checkbox' class='disabled' value='select_all'></th>
+			{{#col_names}}
+				<th>{{name}}</th>
+			{{/col_names}}
+			
+				$column_slugs[] = $index;
+				$removeBtn = (!$indexUnique) ? "<a class='fill-anchor' href='?remove=".$index."'><span class='remove_col glyphicon glyphicon-remove glyph-absolute' ></span></a>" : "";
+				echo "<th>".$index.$removeBtn."</th>";
+				$indexUnique = FALSE;
+
+			unset($column_slugs[array_search("id", $column_slugs)]);
+			$column_slugs = array_values($column_slugs);
+			?>
+
+		</tr>
+	</thead>
+	<tbody id="tableBody">
+
+		<?php
+		//TODO: Be able to pass different unique identifier
+		//Exclude array
+		foreach ($results as $row) {
+			echo '<tr>';
+				
+				echo "<th class='check'><input type='checkbox' data-delete='$row->id' value='select_single'></th>";
+			foreach ($row as $index => $cell_value) {
+				if(!in_array($index, $exclude)){
+
+					$class = ($index == 'id') ? 'unique' : '';
+					$save = ($index == 'id') ? "<span data-update='$cell_value' class='save-absolute glyphicon glyphicon-floppy-disk hidden'></span>" : "";
+					echo "<th class='$class'>".$save.$cell_value."</th>";
+				}
+				echo "<span data-update='$cell_value' class='save-absolute glyphicon glyphicon-floppy-disk hidden'></span>";
+			}
+			echo '</tr>';
+				
+		}
+		?>
+
+	</tbody>
+</table>

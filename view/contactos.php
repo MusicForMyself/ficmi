@@ -25,20 +25,21 @@
 
 						<table class="table table-striped">
 							
-							<?php 
+						<?php 
 							$table = new tableController();
-							$results = $table->populateTable("gb_contacts"); 
-
+							$results = $table->populateFromDB("gb_contacts"); 
 
 							//Exclude array
 							$exclude = array("created", "other");
 
-							$column_slugs = array();
-							?>
+							// $results = $table->populateFromDB("gb_contacts", $exclude)->render(); 
+						?>
 							
 							<thead>
 								<tr>
 									<?php
+
+									$column_slugs = array();
 									$indexUnique = TRUE;
 									echo "<th class='check'><input type='checkbox' class='disabled' value='select_all'></th>";
 									foreach ($results[0] as $index =>  $param) {
