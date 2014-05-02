@@ -23,11 +23,11 @@
 
 	// Initialize mustache php
 	$mustache = new Mustache_Engine(array(
-	    'template_class_prefix' => '__Templates__',
-	    'cache' => 'includes/tmp/cache/mustache',
-	    'cache_lambda_templates' => true,
-	    'loader' => new Mustache_Loader_FilesystemLoader(dirname('view')),
-	    'partials_loader' => new Mustache_Loader_FilesystemLoader(dirname('view/partials'))
+	    'template_class_prefix' 	=> '__Templates__',
+	    'cache' 					=> 'includes/tmp/cache/mustache',
+	    'cache_lambda_templates' 	=> true,
+	    'loader' 					=> new Mustache_Loader_FilesystemLoader('view'),
+	    'partials_loader' 			=> new Mustache_Loader_FilesystemLoader('view/partials')
 	));
 
 	// Create Error handling object

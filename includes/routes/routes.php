@@ -24,8 +24,8 @@ $app->map('/login/', function (){
 
 
 $app->get('/dashboard', function () {
-
-	include("view/dashboard.php");
+    global $mustache;
+	echo $mustache->render('dashboard');
     exit();
 });
 

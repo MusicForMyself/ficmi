@@ -63,11 +63,16 @@ class tableController{
 	}
 
 	function render(){
-		file_put_contents(
-							'/Users/maquilador8/Desktop/php.log', 
-							var_export($this->tableData, true), 
-							FILE_APPEND);
-		$this->my_mustache->render('contacts', $this->tableData);
+		// file_put_contents(
+		// 					'/Users/maquilador8/Desktop/php.log', 
+		// 					var_export($this->tableData, true), 
+		// 					FILE_APPEND);
+		
+
+		$tmpl = $this->my_mustache->loadTemplate('contacts');
+		echo $tmpl->render(array("title" => "This is not a title" ,"value" => "Hello World"));
+
+		// echo $this->my_mustache->render('contacts', $this->tableData);
 	}
 
 
