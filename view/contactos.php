@@ -27,12 +27,12 @@
 							
 						<?php 
 							$table = new tableController();
-							$results = $table->populateFromDB("gb_contacts"); 
+							// $results = $table->populateFromDB("gb_contacts"); 
 
 							//Exclude array
 							$exclude = array("created", "other");
 
-							// $results = $table->populateFromDB("gb_contacts", $exclude)->render(); 
+							$results = $table->populateFromDB("gb_contacts", $exclude)->render(); 
 						?>
 							
 							<thead>

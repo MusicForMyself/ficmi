@@ -21,5 +21,15 @@
 		define("SECURE", $security->secure_connection);
 	}
 
+	// Initialize mustache php
+	$mustache = new Mustache_Engine(array(
+	    'template_class_prefix' => '__Templates__',
+	    'cache' => 'includes/tmp/cache/mustache',
+	    'cache_lambda_templates' => true,
+	    'loader' => new Mustache_Loader_FilesystemLoader(dirname('view')),
+	    'partials_loader' => new Mustache_Loader_FilesystemLoader(dirname('view/partials'))
+	));
+
+	// Create Error handling object
 	$error_handler 	 = new err_manager();
 	$error_handler->checkHeaderErrors();

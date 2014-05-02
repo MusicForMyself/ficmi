@@ -1,7 +1,7 @@
 <?php
 
 $app = new \Slim\Slim();
-
+include_once('includes/tables/tableController.class.php');
 
 $app->get('/', function () {
     /* Redirect browser */
@@ -29,11 +29,40 @@ $app->get('/dashboard', function () {
     exit();
 });
 
-$app->map('/contactos', function () {
+// CONTACTOS
+$app->get('/contactos', function () {
 
-    include("view/contactos.php");
+    $tables = new tableController();
+    $tables->populateFromDB( "gb_contacts", array("created") )->render(); 
     exit();
-})->via('GET', 'POST');
+});
+
+$app->get('/contactos/:id', function () {
+
+    //Get the single
+});
+
+$app->post('/contactos', function () {
+
+    $tables = new tableController();
+    $tables->insert();
+    exit();
+});
+
+$app->delete('/contactos', function () {
+
+    $tables = new tableController();
+    $tables->delete();
+    exit();
+});
+
+$app->put('/contactos', function () {
+
+    $tables = new tableController();
+    $tables->delete();
+    exit();
+});
+
 
 //SIGN UP
 $app->get('/signup', function () {

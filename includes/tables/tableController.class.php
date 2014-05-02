@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Class: tableController
+ * In charge of every operation with the tables module
+ * @see routes
+ */
 class tableController{
 
 	//TODO: Remove global $con object, pass it as a parameter to the constructor
@@ -7,14 +12,23 @@ class tableController{
 	private $tableData;
 	private $pdo_con;
 	private $error_handler;
+	private $my_mustache;
 
 	function __construct(){
-		global $con,$error_handler;
+		global $con, $error_handler, $mustache;
 		//Initialize local connection instance
 		$this->pdo_con = $con;
 		$this->error_handler = $error_handler;
+		$this->my_mustache = $mustache;
 	}
 
+	/**
+	 * Gets the data from the database to populate a table
+	 * @param  String  $tableName The name of the table in the database we want to retrieve
+	 * @param  array   $exclude   Columns to exclude from results
+	 * @param  integer $offset    Offset number to paginate results
+	 * @return self             Method returns itself for chaining purposes
+	 */
 	function populateFromDB($tableName, $exclude = array(), $offset = 0){
 
 		//TODO: Validate and sanitize tableName
@@ -24,7 +38,12 @@ class tableController{
 		if ($stmt->execute()) {
 
 			$this->tableData = $stmt->fetchAll(PDO::FETCH_OBJ);
-			return $stmt->fetchAll(PDO::FETCH_OBJ);
+			foreach ($this->tableData as $object) {
+				foreach ($exclude as $value) {
+					unset($object->{$value});
+				}
+			}
+			return $this;
 		}else {
 
 			$this->error_handler->logError("Table population", "Error executing query", true);
@@ -39,9 +58,16 @@ class tableController{
 		return $this;
 	}
 
+	function delete(){
+
+	}
+
 	function render(){
-
-
+		file_put_contents(
+							'/Users/maquilador8/Desktop/php.log', 
+							var_export($this->tableData, true), 
+							FILE_APPEND);
+		$this->my_mustache->render('contacts', $this->tableData);
 	}
 
 
