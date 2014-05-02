@@ -3,6 +3,7 @@
         "vendor-dir": "includes/vendor"
     },
     "require": {
-        "slim/slim": "2.*"
+        "slim/slim": "2.*",
+        "mustache/mustache": "~2.5"
     }
 }
