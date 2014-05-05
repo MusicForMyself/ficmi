@@ -53,18 +53,21 @@ class tableController{
 
 	}
 
+	/**
+	 * Get the table column titles
+	 * @return Array Returns itself for chaining purposes
+	 */
 	function getKeys(){
 		if(!isset($this->tableData)){
 			return FALSE;
 		}
-		$assoc_keys = array();
-		$keys = array_keys((array)$this->tableData[0]);
-		foreach ($keys as $key) {
-			$assoc_keys[] = array("name" => $key );
-		}
-		return $assoc_keys;
+		return array_keys((array)$this->tableData[0]);
 	}
 
+	/**
+	 * Gets query results
+	 * @return $entries Array of objects
+	 */
 	function getEntries(){
 		$entries = array();
 		foreach ($this->tableData as $entry) {
@@ -74,6 +77,10 @@ class tableController{
 		return $entries;
 	}
 
+	/**
+	 * Add new column to a table
+	 * @return $this Returns itself for chaining purposes
+	 */
 	function column(){
 
 		$queryMaster = new query_master($con);
@@ -81,6 +88,10 @@ class tableController{
 		return $this;
 	}
 
+	/**
+	 * Update a row with new information
+	 * @return $this Returns itself for chaining purposes
+	 */
 	function dropColumn(){
 
 		require 'includes/db/the_query_master.class.php';
@@ -88,6 +99,10 @@ class tableController{
 		$queryMaster->removeColumn('gb_contacts', $_GET['remove']);
 	}
 
+	/**
+	 * Insert a new row
+	 * @return $this Returns itself for chaining purposes
+	 */
 	function insert(){
 
 		$array_keys = array_keys($_POST);
@@ -103,6 +118,10 @@ class tableController{
 		return $this;
 	}
 
+	/**
+	 * Delete a row
+	 * @return $this Returns itself for chaining purposes
+	 */
 	function delete(){
 
 		require 'includes/db/the_query_master.class.php';
@@ -111,6 +130,10 @@ class tableController{
 		return $this;
 	}
 
+	/**
+	 * Update a row with new information
+	 * @return $this Returns itself for chaining purposes
+	 */
 	function update(){
 
 		$update_id = $_POST['update'];
@@ -131,34 +154,25 @@ class tableController{
 	 * 
 	 */
 	function render(){
-		// file_put_contents(
-		// 					'/Users/maquilador8/Desktop/php.log', 
-		// 					var_export($this->tableData, true), 
-		// 					FILE_APPEND);
 		
 		$keys = $this::getKeys();
 		$entries = $this::getEntries();
 
-		// file_put_contents(
-		// 	'/Users/johnfalcon/Desktop/php.txt',
-		// 	var_export( $entries, true ) . PHP_EOL,
-		// 	FILE_APPEND
-		// );
-		// 
 		$m = new Mustache_Engine(array(
 			    'loader' => new Mustache_Loader_FilesystemLoader('includes/tables/')
 			));
-		$data = array("keys" => $keys, "data" => $entries);
-		$table =  $m->render('table', $data);
-		file_put_contents(
-			'/Users/johnfalcon/Desktop/php.txt',
-			var_export( $table, true ) . PHP_EOL,
-			FILE_APPEND
-		);
+		$data_numeric = array();
+		foreach ($entries as $value) {
+			$myarray = (array)$value;
+			$data_numeric[] = array_values($myarray);
+		}
+
+		$data = array("keys" => $keys, "data" => $entries, "data_numeric" => $data_numeric);
+		$partials = $m->render('table', $data);
+
 		echo $this->my_mustache->render('contacts', 
-										array(	"title" => "Contactos de FICM" ), 
-										array(
-											"table"	=> $table
+										array(	"title" => "Contactos de FICM",
+												"table" => $partials
 										));
 	}
 

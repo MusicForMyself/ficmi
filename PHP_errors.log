@@ -321,3 +321,6 @@ Stack trace:
 [05-May-2014 08:36:36 Europe/Berlin] PHP Fatal error:  Call to undefined function getKeys() in /Applications/MAMP/htdocs/ficmi_gumbo/includes/tables/tableController.class.php on line 128
 [05-May-2014 09:18:49 Europe/Berlin] PHP Fatal error:  Call to undefined method Mustache_Engine::load() in /Applications/MAMP/htdocs/ficmi_gumbo/includes/tables/tableController.class.php on line 148
 [05-May-2014 09:36:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/ficmi_gumbo/includes/tables/tableController.class.php on line 155
+[05-May-2014 16:17:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected '{' in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 142
+[05-May-2014 16:18:02 Europe/Berlin] PHP Fatal error:  Call to undefined method Mustache_Engine::loadTemplates() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 143
+[05-May-2014 16:55:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 139

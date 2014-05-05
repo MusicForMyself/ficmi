@@ -4,21 +4,20 @@
 			
 			<th class="check"><input type="checkbox" class="disabled" value="select_all"></th>
 			{{#keys}}
-				<th>{{name}}</th>
+				<th>{{.}}</th>
 			{{/keys}}
 			
 		</tr>
 	</thead>
 	<tbody id="tableBody">
-
-		<tr>
-		{{#data}}
-
-			<th>{{first_name}}</th>
-
-		{{/data}}
-			
-		</tr>
+		{{#data_numeric}}
+			<tr>
+				<th class="check"><input type="checkbox" data-delete="{{id}}" value="select_single"></th>
+				{{#.}}
+				<th>{{.}}</th>
+				{{/.}}
+			</tr>
+		{{/data_numeric}}
 
 	</tbody>
 </table>
