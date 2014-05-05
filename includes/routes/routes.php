@@ -1,7 +1,20 @@
 <?php
-
+global $app_info;
 $app = new \Slim\Slim();
 include_once('includes/tables/tableController.class.php');
+
+
+/**
+ *
+ *       :::::::::   ::::::::  :::    ::: ::::::::::: :::::::::: ::::::::  
+ *       :+:    :+: :+:    :+: :+:    :+:     :+:     :+:       :+:    :+: 
+ *       +:+    +:+ +:+    +:+ +:+    +:+     +:+     +:+       +:+        
+ *       +#++:++#:  +#+    +:+ +#+    +:+     +#+     +#++:++#  +#++:++#++ 
+ *       +#+    +#+ +#+    +#+ +#+    +#+     +#+     +#+              +#+ 
+ *       #+#    #+# #+#    #+# #+#    #+#     #+#     #+#       #+#    #+# 
+ *       ###    ###  ########   ########      ###     ########## ########  
+ *
+ **/
 
 $app->get('/', function () {
     /* Redirect browser */
@@ -10,13 +23,7 @@ $app->get('/', function () {
 });
 
 //SIGN IN
-// $app->get('/login/', function (){
-//     /* Redirect browser */
-//     // $app->redirect('view/login.php'); 
-//     include("view/login.php");
-//     exit();
-// });
-$app->map('/login/', function (){ 
+$app->map('/login', function (){ 
     
     include("view/login.php");
     exit();
@@ -25,7 +32,7 @@ $app->map('/login/', function (){
 
 $app->get('/dashboard', function () {
     global $mustache;
-	echo $mustache->render('dashboard');
+	echo $mustache->render('dashboard', array('title'=> "Dashboard "));
     exit();
 });
 
@@ -45,21 +52,21 @@ $app->get('/contactos/:id', function () {
 $app->post('/contactos', function () {
 
     $tables = new tableController();
-    $tables->insert();
+    $tables->insert()->render();
     exit();
 });
 
 $app->delete('/contactos', function () {
 
     $tables = new tableController();
-    $tables->delete();
+    $tables->delete()->render();
     exit();
 });
 
 $app->put('/contactos', function () {
 
     $tables = new tableController();
-    $tables->delete();
+    $tables->update()->render();
     exit();
 });
 

@@ -1,29 +1,24 @@
-<?php 
-	include_once('gb_header.php');
-	include_once('includes/tables/tableController.class.php');
-?>
-<table class="table table-striped">
-	
+<table class="table table-striped">	
 	<thead>
 		<tr>
 			
-			<th class='check'><input type='checkbox' class='disabled' value='select_all'></th>
-			{{#col_names}}
+			<th class="check"><input type="checkbox" class="disabled" value="select_all"></th>
+			{{#keys}}
 				<th>{{name}}</th>
-			{{/col_names}}
+			{{/keys}}
 			
 		</tr>
 	</thead>
 	<tbody id="tableBody">
 
 		<tr>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
+		{{#data}}
+
+			<th>{{first_name}}</th>
+
+		{{/data}}
+			
 		</tr>
 
 	</tbody>
 </table>
-
-<?php include_once('footer.php'); ?>

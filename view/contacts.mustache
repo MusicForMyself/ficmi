@@ -1,5 +1,56 @@
 {{>header}}
-
 	
+	<div class="container-fluid">
+
+				{{>sidebar}}
+
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				
+					<h1 class="page-header">Contactos</h1>
+
+					<div class="table-responsive">
+						<form id="new_column_form" class="inline-form hidden">
+							<input type="text" name="column" placeholder="Nombre de la columna">
+						</form>
+
+						<button id="add_col" type="button" class="btn btn-default btn-sm pull-right">
+							<span class="glyphicon glyphicon-plus"></span> Column
+						</button>
+						<button id="done_adding_col" type="button" class="btn btn-default btn-sm pull-right hidden done-btn" >
+							<span class="glyphicon glyphicon-ok"></span> Done
+						</button>
+
+							{{>tablhe}}
+
+					</div><!-- table-resposive -->
+
+{{! 					<form id="insert_row_form" method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="hidden">
+						<!-- Inputs will be appended here -->
+					</form>
+
+					<form id="update_row_form" method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="hidden">
+						<!-- Inputs will be appended here -->
+						<input id="update_id" name="update" type="text" value="">
+					</form>
+
+					<form id="delete_row_form" class="hidden">
+						<!-- Inputs will be appended here -->
+						<input id="delete_id" name="delete" type="text" value="">
+					</form> }}
+
+					<button id="add_row" type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-plus"></span> Add
+					</button>
+
+					<button id="done_adding" type="button" class="btn btn-default btn-sm hidden done-btn">
+						<span class="glyphicon glyphicon-ok"></span> Done
+					</button>
+
+					<button id="delete_row" type="button" class="btn btn-default btn-sm rm-btn">
+						<span class="glyphicon glyphicon-remove"></span> Delete
+					</button>
+				</div><!-- container -->
+			</div><!-- fluid -->
+
 
 {{>footer}}

@@ -317,3 +317,7 @@ Stack trace:
 [02-May-2014 18:52:04 Europe/Berlin] PHP Fatal error:  Call to a member function render() on a non-object in /Users/maquilador8/var/www/ficmi_gumbo/view/contactos.php on line 35
 [02-May-2014 18:55:58 Europe/Berlin] PHP Fatal error:  Class 'tableController' not found in /Users/maquilador8/var/www/ficmi_gumbo/includes/routes/routes.php on line 34
 [02-May-2014 21:59:14 Europe/Berlin] PHP Parse error:  syntax error, unexpected ';' in /Users/maquilador8/var/www/ficmi_gumbo/includes/routes/routes.php on line 28
+[05-May-2014 04:05:13 Europe/Berlin] PHP Fatal error:  Call to a member function render() on a non-object in /Applications/MAMP/htdocs/ficmi_gumbo/includes/routes/routes.php on line 36
+[05-May-2014 08:36:36 Europe/Berlin] PHP Fatal error:  Call to undefined function getKeys() in /Applications/MAMP/htdocs/ficmi_gumbo/includes/tables/tableController.class.php on line 128
+[05-May-2014 09:18:49 Europe/Berlin] PHP Fatal error:  Call to undefined method Mustache_Engine::load() in /Applications/MAMP/htdocs/ficmi_gumbo/includes/tables/tableController.class.php on line 148
+[05-May-2014 09:36:20 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /Applications/MAMP/htdocs/ficmi_gumbo/includes/tables/tableController.class.php on line 155

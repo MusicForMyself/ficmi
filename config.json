@@ -2,7 +2,7 @@
 	"DB" : {
 		"driver" 	: "mysql",
 		"host" 		: "localhost",
-		"database" 	: "gumbo_db",
+		"database" 	: "ficmi_db",
 		"user" 		: "root",
 		"password" 	: "root"
 	},
