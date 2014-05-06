@@ -15,23 +15,32 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 				myforms.sendForm();
 			});
 
-			var get_row_values = function(selector){
-				var id, flag = true, 
+			var get_row_values = function(selector, all){
+				all = all || true;
+				var id, flag = true, idx = 0, 
 					data = {
-						"columns" : []
+						"columns"    : [],
+						"idx"        : 	function() {
+											idx++;
+											return (idx === 1) ? true : false;
+										},
+						"resetCount" : 	function(){
+											idx = 0;
+										}
 					};
+
 				$selector = $(selector);
 				$selector.find('th').each(function(){
 					if($(this).hasClass('check')) return;
 					var contents;
 					if(flag){
 						id = contents = $(this).text();
-						data.columns.push(contents);
 						data.id = id;
 						flag = !flag;
 						return;
 					}
-					data.columns.push('');
+					var push_var = (all) ? $(this).text() : '' ; 
+					data.columns.push(push_var);
 				});
 				return data;
 			}
@@ -44,7 +53,7 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 			$('#add_row').on('click', function(){
 				
 				var $lastRow = $('#tableBody tr').last();
-				var data = get_row_values($lastRow);
+				var data = get_row_values($lastRow, false);
 
 				$.get('includes/tables/row.mustache', function(template) {
 					
@@ -81,9 +90,7 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 
 			//Remove Column
 			$('.remove_col').on('click', function(){
-				console.log('lol');
 				var data_remove = $(this).attr('data-remove');
-				console.log(data_remove);
 			});
 
 			/**
@@ -94,12 +101,13 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 			function inputRow(selector){
 				var id, flag = true, data;
 				$selector = $(selector);
-				data = get_row_values($selector);
+				data = get_row_values(selector);
 
 				$.get('includes/tables/input_row.mustache', function(template) {
 					
 					var rendered = Mustache.render(template, data);
 					$selector.html(rendered);
+					$selector.find('input[type="text"]').first().focus();
 				});
 			}
 
@@ -108,7 +116,6 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 				
 				var $thisRow = $(this).parent();
 				inputRow($thisRow);
-				
 
 				$(this).parent().find('.save-absolute').removeClass('hidden');
 			});
@@ -139,6 +146,12 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 				if(length == 0) return;
 				$('#delete_id').attr('value', JSON.stringify(IDarray));
 				$('#delete_row_form').submit();
+			});
+
+			//Select all
+			$('input[value="select_all"]').on('click', function(){
+				
+				$('input[value="select_single"]').attr('checked', true);
 			});
 
 			var prevBorder;

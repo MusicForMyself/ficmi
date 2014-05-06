@@ -1,5 +1,31 @@
 <?php
 require 'includes/db/the_query_master.class.php';
+
+/**
+ * Data object for initial render
+ */
+class dataObj {
+
+	public $keys, $entries, $data_numeric, $index;
+
+	function __construct($keys, $entries, $data_numeric){
+		$this->index = 0;
+		$this->keys = $keys;
+		$this->entries = $entries;
+		$this->data_numeric = $data_numeric;
+	}
+
+	public function idx() {
+		$this->index++;
+		return ($this->index === 1) ? true : false;
+	}
+
+	public function resetCount(){
+		$this->index = 0;
+	}
+
+}
+
 /**
  * Class: tableController
  * In charge of every operation with the tables module
@@ -34,7 +60,7 @@ class tableController{
 
 		//TODO: Validate and sanitize tableName
 		$stmt = $this->pdo_con->prepare("SELECT * FROM $tableName LIMIT 15 OFFSET ?");
-	 	$stmt->bindParam( 1, $offset, PDO::PARAM_INT, 12);
+		$stmt->bindParam( 1, $offset, PDO::PARAM_INT, 12);
 
 		if ($stmt->execute()) {
 
@@ -148,7 +174,6 @@ class tableController{
 	}
 
 
-
 	/**
 	 * Renders de table template with the information fetched from the database
 	 * 
@@ -159,7 +184,7 @@ class tableController{
 		$entries = $this::getEntries();
 
 		$m = new Mustache_Engine(array(
-			    'loader' => new Mustache_Loader_FilesystemLoader('includes/tables/')
+				'loader' => new Mustache_Loader_FilesystemLoader('includes/tables/')
 			));
 		$data_numeric = array();
 		foreach ($entries as $value) {
@@ -167,7 +192,8 @@ class tableController{
 			$data_numeric[] = array_values($myarray);
 		}
 
-		$data = array("keys" => $keys, "data" => $entries, "data_numeric" => $data_numeric);
+		$data = new dataObj($keys, $entries, $data_numeric);
+		
 		$partials = $m->render('table', $data);
 
 		echo $this->my_mustache->render('contacts', 

@@ -4,9 +4,9 @@
 			
 			<th class="check"><input type="checkbox" class="disabled" value="select_all"></th>
 			{{#keys}}
-				<th>{{.}}</th>
+				<th {{#idx}}class="unique"{{/idx}}>{{.}}</th>
 			{{/keys}}
-			
+			{{resetCount}}
 		</tr>
 	</thead>
 	<tbody id="tableBody">
@@ -14,8 +14,9 @@
 			<tr>
 				<th class="check"><input type="checkbox" data-delete="{{id}}" value="select_single"></th>
 				{{#.}}
-				<th>{{.}}</th>
+				<th {{#idx}}class = "unique"{{/idx}}>{{.}}</th>
 				{{/.}}
+				{{resetCount}}
 			</tr>
 		{{/data_numeric}}
 

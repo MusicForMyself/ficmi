@@ -324,3 +324,5 @@ Stack trace:
 [05-May-2014 16:17:23 Europe/Berlin] PHP Parse error:  syntax error, unexpected '{' in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 142
 [05-May-2014 16:18:02 Europe/Berlin] PHP Fatal error:  Call to undefined method Mustache_Engine::loadTemplates() in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 143
 [05-May-2014 16:55:43 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'file_put_contents' (T_STRING) in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 139
+[06-May-2014 19:15:19 Europe/Berlin] PHP Fatal error:  Class declarations may not be nested in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 169
+[06-May-2014 19:16:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting function (T_FUNCTION) in /Users/maquilador8/var/www/ficmi_gumbo/includes/tables/tableController.class.php on line 153
