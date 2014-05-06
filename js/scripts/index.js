@@ -1,4 +1,4 @@
-define(["jquery", "forms", "bootstrap", "err_handler"], function($, myforms){
+define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, myforms, btsrtp, Mustache){
 	(function($){
 		   
 			//Do some jQuery stuff right here
@@ -15,26 +15,46 @@ define(["jquery", "forms", "bootstrap", "err_handler"], function($, myforms){
 				myforms.sendForm();
 			});
 
-			//These too, put in tables.js
-			var newRow;
-			$('#add_row').on('click', function(){
-				$(this).addClass('hidden');
-				$('#done_adding').removeClass('hidden');
-				var $tbody = $('#tableBody');
-				newRow = $('#tableBody tr').last().clone();
-				newRow.addClass('inserted_row');
-				
-				var nextUnique = parseInt(newRow.find('th.unique').text())+1;
-				newRow.find('th.unique').html(nextUnique);
-
-				newRow.find('th:not(.unique)').each(function(index){
-
-					$(this).addClass('generated has_input').html("<input type='text' name='field"+index+"' class='table_cell_input'>");
+			var get_row_values = function(selector){
+				var id, flag = true, 
+					data = {
+						"columns" : []
+					};
+				$selector = $(selector);
+				$selector.find('th').each(function(){
+					if($(this).hasClass('check')) return;
+					var contents;
+					if(flag){
+						id = contents = $(this).text();
+						data.columns.push(contents);
+						data.id = id;
+						flag = !flag;
+						return;
+					}
+					data.columns.push('');
 				});
+				return data;
+			}
+
+			//These too, put in tables.js
+			/**
+			 * Adds new row at the bottom of the table
+			 * @see row template into tables module
+			 */
+			$('#add_row').on('click', function(){
 				
-				$tbody.append(newRow);
-				
+				var $lastRow = $('#tableBody tr').last();
+				var data = get_row_values($lastRow);
+
+				$.get('includes/tables/row.mustache', function(template) {
+					
+					var rendered = Mustache.render(template, data);
+					$('#tableBody').append(rendered);
+				});
 			});
+
+			
+
 
 			$('#add_col').on('click', function(){
 				$(this).addClass('hidden');
@@ -66,20 +86,30 @@ define(["jquery", "forms", "bootstrap", "err_handler"], function($, myforms){
 				console.log(data_remove);
 			});
 
-			//Wrap row in input
-			function wrapWithInput(selector){
+			/**
+			 * Wraps the row info within input controls
+			 * @param  $selector JQuery selector '<tr></tr>'
+			 * 
+			 */
+			function inputRow(selector){
+				var id, flag = true, data;
+				$selector = $(selector);
+				data = get_row_values($selector);
 
-				$(selector).find('th:not(.unique)').each(function(index){
-					if($(this).hasClass('check')) return;
-					var preValue = $(this).text();
-					$(this).addClass('has_input generated').html("<input type='text' name='field"+index+"' class='table_cell_input' value='"+preValue+"'>");
+				$.get('includes/tables/input_row.mustache', function(template) {
+					
+					var rendered = Mustache.render(template, data);
+					$selector.html(rendered);
 				});
-				return;
 			}
 
 			$("th").on('click', function(){
 				if($(this).hasClass('generated') || $(this).hasClass('check')) return;
-				wrapWithInput($(this).parent());
+				
+				var $thisRow = $(this).parent();
+				inputRow($thisRow);
+				
+
 				$(this).parent().find('.save-absolute').removeClass('hidden');
 			});
 

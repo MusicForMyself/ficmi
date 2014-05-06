@@ -3,6 +3,7 @@ requirejs.config({
     paths: {
         "jquery": "vendor/jquery/dist/jquery",
         "bootstrap": "vendor/bootstrap/dist/js/bootstrap.min",
+        "mustache": "vendor/mustache/mustache",
         "sha512": "vendor/sha512/sha512",
         "index": "index",
         "hashing": "hashing",
