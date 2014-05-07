@@ -150,8 +150,8 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 
 			//Select all
 			$('input[value="select_all"]').on('click', function(){
-				
-				$('input[value="select_single"]').attr('checked', true);
+				var state = $(this).prop('checked');
+				$('.single_select').prop('checked', state);
 			});
 
 			var prevBorder;
