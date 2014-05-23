@@ -12,7 +12,7 @@
 	<tbody id="tableBody">
 		{{#data_numeric}}
 			<tr>
-				<th class="check"><input type="checkbox" data-delete="{{id}}" value="select_single"></th>
+				<th class="check"><input type="checkbox" class="single_select" data-delete="{{id}}" value="select_single"></th>
 				{{#.}}
 				<th {{#idx}}class = "unique"{{/idx}}>{{.}}</th>
 				{{/.}}
