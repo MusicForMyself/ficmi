@@ -23,17 +23,16 @@
 				{{{table}}}
 
 			</div><!-- table-resposive -->
-
-{{! 					<form id="insert_row_form" method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="hidden">
+{{! 
+					<form id="insert_row_form" method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="hidden">
 				<!-- Inputs will be appended here -->
+			</form> }}
+
+			<form id="the_form" method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="hidden">
+				
 			</form>
 
-			<form id="update_row_form" method="POST" action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" class="hidden">
-				<!-- Inputs will be appended here -->
-				<input id="update_id" name="update" type="text" value="">
-			</form>
-
-			<form id="delete_row_form" class="hidden">
+			{{! <form id="delete_row_form" class="hidden">
 				<!-- Inputs will be appended here -->
 				<input id="delete_id" name="delete" type="text" value="">
 			</form> }}

@@ -65,8 +65,13 @@ $app->delete('/contactos', function () {
 
 $app->put('/contactos', function () {
 
-    $tables = new tableController();
-    $tables->update()->render();
+    // $tables = new tableController();
+    // $tables->update()->render();
+    file_put_contents(
+                        '/Users/maquilador8/Desktop/php.log', 
+                        var_export('looool put method', true), 
+                        FILE_APPEND);
+    table_updateRow();
     exit();
 });
 

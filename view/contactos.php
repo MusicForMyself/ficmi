@@ -39,7 +39,7 @@
 								<tr>
 									<?php
 
-									$column_slugs = array();
+									global $column_slugs;
 									$indexUnique = TRUE;
 									echo "<th class='check'><input type='checkbox' class='disabled' value='select_all'></th>";
 									foreach ($results[0] as $index =>  $param) {
@@ -108,20 +108,7 @@
 						{
 							require 'includes/db/the_query_master.class.php';
 							if(isset($_POST['update'])){
-								$update_id = $_POST['update'];
-								unset($_POST['update']);
-								$array_keys = array_keys($_POST);
-								$array_values = array_values($_POST);
-								
-								$queryMaster = new query_master($con);
-								// unset($array_values[0]);
-								// $array_values = array_values($array_values);
-
-								$queryMaster->update("gb_contacts", $column_slugs, $array_values, "id = $update_id");
-
-								//TODO: this mehod fucks up the error_reporter
-								header("Location: {$_SERVER['REDIRECT_URL']}");
-								return;
+								//UPDATE ALREADY MOVED
 							}
 							$array_keys = array_keys($_POST);
 							//$array_values = array_values($_POST);
@@ -130,10 +117,7 @@
 							$array_values = array_values($_POST);
 							unset($array_values[0]);
 							$array_values = array_values($array_values);
-							file_put_contents(
-												'/Users/maquilador8/Desktop/php.log', 
-												var_export($array_values, true), 
-												FILE_APPEND);
+							
 
 							$queryMaster->insert("gb_contacts", $column_slugs, $array_values );
 

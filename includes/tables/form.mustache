@@ -1,4 +1,8 @@
-<form id="{{id}}" method="{{method}}" action="{{action}}" class="hidden">
+<form id="{{id}}" method="{{method}}" action="{{action}}" >
 	<!-- Inputs will be appended here -->
-	<input type="hidden" name="_METHOD" value="{{method_force}}"/>
+	{{#values}}
+		<input type="text" name="{{name}}" value="{{value}}">
+	{{/values}}
+	<input type="hidden" name="_METHOD" value="{{method_force}}">
+	<input type="submit" name="submit" id="submit_click">
 </form>

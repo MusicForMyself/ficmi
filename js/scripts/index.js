@@ -111,6 +111,20 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 				});
 			}
 
+			/**
+			 * Renders a dynamic form to send certain data
+			 * args Object containing the settings and data for the form
+			 * MUST contain: id, method, action, inputs
+			 * CAN contain: method force
+			 */
+			function renderForm(selector, args){
+				$.get('includes/tables/form.mustache', function(template) {
+					
+					var rendered = Mustache.render(template, args);
+					$(selector).append(rendered);
+				});
+			}
+
 			$("th").on('click', function(){
 				if($(this).hasClass('generated') || $(this).hasClass('check')) return;
 				
@@ -121,15 +135,29 @@ define(["jquery", "forms", "bootstrap", "mustache", "err_handler"], function($, 
 			});
 
 			//Save row
-			$('.save-absolute').on('click', function(){
-				var update_id = $(this).attr('data-update');
-				$('.table_cell_input').each(function(){
+			$('.main').on('click', '.save-absolute', function(){
 
-					var passValue = $(this).val();
-					$(this).appendTo('#update_row_form').val(passValue);
+				var update_id = $(this).attr('data-update');
+				var args = 	{
+								'id' : 'update_row_form',
+								'method' : 'POST',
+								'action' : document.URL,
+								'method_force' : 'put',
+								'values' : []
+							};
+				
+				$('.table_cell_input').each( function(){
+					var value = $(this).val();
+					args.values.push({'name' : value, 'value' : value});
 				});
-				$('#update_id').attr('value', update_id);
-				$('#update_row_form').submit();
+				args.values.push({'name' : 'update_id', 'value' : update_id});
+
+				// Renders and submits the form
+				renderForm('.main', args);
+				
+				//NOT SUBMITTING
+				console.log($(document).find('input#submit_click'));
+
 			});
 
 			//Delete row

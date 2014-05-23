@@ -1,6 +1,8 @@
 <?php
 require 'includes/db/the_query_master.class.php';
+require 'includes/tables/functions.php';
 
+$column_slugs = array();
 /**
  * Data object for initial render
  */
